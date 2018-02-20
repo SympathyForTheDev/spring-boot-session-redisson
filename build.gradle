@@ -1,0 +1,40 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.10.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.devwantjusthavefun'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+
+	compile('org.springframework.boot:spring-boot-starter-security:1.5.10.RELEASE')
+	compile('org.springframework.boot:spring-boot-starter-web:1.5.10.RELEASE')
+	compile('org.springframework.session:spring-session-core:2.0.1.RELEASE')
+	
+	compile group: 'de.ruedigermoeller', name: 'fst', version: '2.57'
+	
+	compile group: 'org.redisson', name: 'redisson', version: '3.6.1'
+		
+	runtime('org.springframework.boot:spring-boot-devtools:1.5.10.RELEASE')
+	
+	testCompile('org.springframework.boot:spring-boot-starter-test:1.5.10.RELEASE')
+	testCompile('org.springframework.security:spring-security-test:1.5.10.RELEASE')
+}
