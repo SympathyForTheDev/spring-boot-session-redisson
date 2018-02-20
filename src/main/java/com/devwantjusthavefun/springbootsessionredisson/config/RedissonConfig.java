@@ -35,8 +35,7 @@ public class RedissonConfig
 
     private Config baseConfig()
     {
-        return new Config()
-                .setCodec(new FstCodec());
+        return new Config().setCodec(new FstCodec());
     }
 
 }
