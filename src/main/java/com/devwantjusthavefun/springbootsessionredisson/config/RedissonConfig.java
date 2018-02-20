@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableRedissonHttpSession
-public class RedisConfig
+public class RedissonConfig
 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(RedisConfig.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(RedissonConfig.class);
 
     @Autowired
     private RedisProperties redisProperties;
@@ -23,7 +23,7 @@ public class RedisConfig
     @Bean
     public RedissonClient redisson()
     {
-        LOGGER.info("Redis Configuration loaded!");
+        LOGGER.info("Redisson Configuration loaded!");
 
         final Config config = baseConfig();
         config.useSingleServer()
