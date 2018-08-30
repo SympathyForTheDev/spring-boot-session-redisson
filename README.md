@@ -2,10 +2,10 @@
 Spring Boot Demo project Integration of Spring Security with Spring Session and Redisson
 
 === Dependency Version
-- Sprint Boot - 1.5.10.RELEASE
-- Spring Security - 4.2.4.RELEASE
-- Spring session - 2.0.1.RELEASE
-- Redisson - 3.6.1
+- Sprint Boot - 2.0.4.RELEASE
+- Spring Security - 5.0.7.RELEASE
+- Spring session - 2.0.5.RELEASE
+- Redisson - 3.7.5
 
 === Setting Up a Redis Server
 

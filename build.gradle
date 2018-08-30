@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.10.RELEASE'
+		springBootVersion = '2.0.4.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -25,16 +25,17 @@ repositories {
 
 dependencies {
 
-	compile('org.springframework.boot:spring-boot-starter-security:1.5.10.RELEASE')
-	compile('org.springframework.boot:spring-boot-starter-web:1.5.10.RELEASE')
-	compile('org.springframework.session:spring-session-core:2.0.1.RELEASE')
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: springBootVersion
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion
+	compile group: 'org.springframework.session', name: 'spring-session-core', version: '2.0.5.RELEASE'
 	
 	compile group: 'de.ruedigermoeller', name: 'fst', version: '2.57'
 	
-	compile group: 'org.redisson', name: 'redisson', version: '3.6.1'
+	compile group: 'org.redisson', name: 'redisson', version: '3.7.5'
 		
-	runtime('org.springframework.boot:spring-boot-devtools:1.5.10.RELEASE')
-	
-	testCompile('org.springframework.boot:spring-boot-starter-test:1.5.10.RELEASE')
-	testCompile('org.springframework.security:spring-security-test:1.5.10.RELEASE')
+	runtime group: 'org.springframework.boot', name: 'spring-boot-devtools', version: springBootVersion
+			
+	testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion
+	testCompile group: 'org.springframework.boot', name: 'spring-security-test', version: springBootVersion		
+
 }
