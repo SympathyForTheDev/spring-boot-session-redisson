@@ -33,8 +33,7 @@ dependencies {
 	
 	compile group: 'de.ruedigermoeller', name: 'fst', version: '2.57'
 	
-	compile group: 'org.redisson', name: 'redisson-spring-boot-starter', version: '3.8.0'
-	compile group: 'org.redisson', name: 'redisson-spring-data-20', version: '3.8.0'
+	compile group: 'org.redisson', name: 'redisson-spring-boot-starter', version: '3.8.1'
 	
 	runtime group: 'org.springframework.boot', name: 'spring-boot-devtools', version: springBootVersion
 			
